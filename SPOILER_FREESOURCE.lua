@@ -3045,6 +3045,11 @@ do
 									wait()
 									if game:GetService("Workspace"):FindFirstChild(L_339_forvar1.Name) then
 										Tween(L_339_forvar1.CFrame)
+										-- Check for left mouse click
+										if UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then
+											-- Trigger left mouse click
+											game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Swimming)
+										end
 									end
 								until AutoFarmChest == false or not L_339_forvar1.Parent
 								Tween(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
