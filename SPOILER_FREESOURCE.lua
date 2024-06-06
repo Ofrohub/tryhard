@@ -3026,7 +3026,7 @@ do
 		L_6_.ToggleChest:SetValue(false)
 	end
 	local L_103_ = L_5_.Main:AddToggle("ToggleChestTween", {
-		Title = "Auto Chest [Tween]",
+		Title = "تفريم صناديق [Tween]",
 		Default = false
 	})
 	L_103_:OnChanged(function(L_337_arg0)
